@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #eeecec;
+}
+
+@media (min-width: 800px) {
+    
+    /* main */
+    main {
+        margin-top: 200px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .hot {
+        width: 80%;
+        border-radius: 15px;
+        background-color: white;
+        margin-left: 10%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .hot img {
+        width: 150px;
+        height: 160px;
+    }
+    /* footer */
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+}

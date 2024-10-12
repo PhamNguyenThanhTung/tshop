@@ -1,0 +1,159 @@
+@media (min-width: 800px) {
+    /* header */
+    header {
+        background-color: white;
+        box-shadow: 0 0 10px rgba(169, 166, 166, 0.331);
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    
+    ul {
+        list-style: none;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        height: 120px;
+    }
+    
+    header .nav-bar {
+        display: inline-flex;
+        padding: 10px;
+    }
+    
+    header li {
+        padding: 0 30px;
+    }
+    
+    header a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        font-size: 1.2em;
+        padding: 120px 0;
+    }
+    
+    header .logo {
+        width: 100px;
+        height: auto;
+        position: relative;
+        left: 100px;
+    }
+    
+    header img {
+        width: 60px;
+        transform: scale(2);
+    }
+
+    header .menu-item {
+        padding-top: 10px;
+        display: block;
+    }
+    
+    header div {
+        margin: auto;
+        cursor: pointer;
+    }
+
+    .nav-phone {
+        position: absolute;
+        top: 120px;
+        left: 400px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        box-shadow: 0 0 10px rgba(169, 166, 166, 0.331);
+        border-radius: 0 0 10px 10px;
+        text-align: start;
+        width: 17%;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .item-phone {
+        padding: 0;
+        margin: 0;        
+    }
+
+    .item-phone a {
+        font-weight: lighter;
+    }
+
+    .nav-SM {
+        display: none;
+    }
+
+    .menu-SM:hover + .nav-SM, .nav-SM:hover{
+        display: block;
+    }
+
+    .item-AS {
+        position: absolute;
+        top: 120px;
+        left: 590px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        box-shadow: 0 0 10px rgba(169, 166, 166, 0.331);
+        border-radius: 0 0 10px 10px;
+        text-align: start;
+        width: 17%;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .item-AS {
+        padding: 0;
+        margin: 0;        
+    }
+
+    .item-AS a {
+        font-weight: lighter;
+    }
+
+    .nav-aces {
+        display: none;
+    }
+
+    .menu-aces:hover + .nav-aces, .nav-aces:hover{
+        display: block;
+    }
+    
+    .search-bar {
+        position: relative;
+    }
+    
+    .search-form {
+        display: flex;
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    .search-input {
+        width: 100%;
+        padding: 12px 15px 12px 40px;
+        border: 1px solid #ccc;
+        border-radius: 50px;
+        font-size: 16px;
+        box-sizing: border-box;
+        outline: none;
+        transition: all 0.3s ease;
+    }
+    
+    .search-input:focus {
+        border-color: black;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+    
+    .search-btn {
+        background: none;
+        border: none;
+        color: black; /* Màu biểu tượng tìm kiếm */
+        font-size: 20px;
+        cursor: pointer;
+        position: absolute;
+        top: 12%;
+        left: 5%;
+    }
+    
+}
