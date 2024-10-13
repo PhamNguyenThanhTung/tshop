@@ -6,7 +6,102 @@ body {
 }
 
 @media (min-width: 800px) {
-    
+    /* giới thiệu điện thoại */
+    .IT img {                    /* ảnh điện thoại*/
+        margin-top: 30px;
+    }
+    .name {                     /* tên điện thoại */
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        padding-top: 10px;
+        font-weight: bold;
+    }
+    .parameter {                /* thông số kỹ thuật */
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+    }
+    .index {                      /* số sao đánh giá */                         
+        border: 1px solid rgb(214, 200, 200);
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 10px;
+        margin: 0 5px 0 5px;
+    }
+    .money {                   /* giá tiền */                    
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        padding: 0 10px;
+    }
+    .money p {                      /* giá tiền */      
+        font-size: 19px;
+        color: red;
+        font-weight: bold;
+    }
+    .money p + p {                /* giá cũ */                  
+        font-size: 14px;
+        text-decoration: line-through;
+        color: rgba(48, 46, 46, 0.817);
+        padding-left: 5px;
+    }
+    .text-sale {                /* giảm giá */         
+        color: green;
+    }   
+    .star {                   /* số sao đánh giá */                                   
+        display: flex;
+        margin-left: 10px;
+    }
+    .star p {                       /* số sao đánh giá */                                            
+        color: rgb(255, 213, 0);
+        font-size: 17px;
+    }
+    .item {                   /* khung chứa ảnh và thông tin điện thoại */                                
+        padding: 10px 0 0 0;
+        margin: 10px 0 10px 0;
+    }
+    .text {                                                                                                                                                                                                                                                                                                                                                                                                                 
+        width: 200px;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: auto;
+        background-color: rgba(239, 239, 239, 0.625);
+    }
+    .text p {                                                                                                                                                                                                                               
+        font-size: 11px;
+        text-align: start;
+        margin: auto;
+        padding: 5px;
+    }
+    .IT {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+        display: block;
+        text-align: center;
+        position: relative;
+    }
+    .IT .tra_gop {                                                                          
+        border: 1px solid rgb(117, 117, 243);
+        box-sizing: border-box;
+        border-radius: 5px;
+        width: auto;
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+    .IT .tra_gop > p {                                                              
+        font-size: 13px;
+        margin: auto;
+        padding: auto;
+        color: rgb(117, 117, 243);
+    }
+    .item:hover {
+        box-shadow: 0 0 10px rgba(169, 166, 166, 0.331);
+        border-radius: 10px;
+    }
+    .item:hover img {                   
+        width: 155px;
+        height: 165px;
+    }
     /* main */
     main {
         margin-top: 200px;
