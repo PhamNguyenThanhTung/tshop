@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phụ Kiện Điện Thoại - InnoWave</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .banner {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+
+        .banner h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .banner p {
+            font-size: 1.2em;
+            color: #ccc;
+        }
+
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .category-card {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: calc(25% - 20px);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-card i {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #3498db;
+        }
+
+        .category-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .featured-products {
+            margin-bottom: 40px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #e74c3c;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8em;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .product-specs {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .product-price {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .product-price .original-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 0.8em;
+        }
+
+        .buy-btn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .detailed-categories {
+            margin-bottom: 40px;
+        }
+
+        .category-section {
+            margin-bottom: 30px;
+        }
+
+        .category-section h2 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .subcategories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .subcategory {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .subcategory h4 {
+            margin-bottom: 15px;
+            color: #3498db;
+        }
+
+        .subcategory ul {
+            list-style-type: none;
+        }
+
+        .subcategory li {
+            margin-bottom: 10px;
+        }
+
+        .special-offers, .warranty-info {
+            margin-bottom: 40px;
+        }
+
+        .offer-grid, .warranty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .offer-card, .warranty-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .offer-card h3, .warranty-card h3 {
+            margin-bottom: 10px;
+            color: #3498db;
+        }
+
+        .offer-code {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        .warranty-card i {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <h1>Phụ Kiện Chính Hãng</h1>
+            <p>Đa dạng - Chất lượng - Bảo hành chính hãng</p>
+        </div>
+
+        <div class="categories">
+            <div class="category-card">
+                <i class="fas fa-charging-station"></i>
+                <h3>Sạc & Cáp</h3>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-headphones"></i>
+                <h3>Tai Nghe</h3>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Ốp Lưng</h3>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-battery-full"></i>
+                <h3>Pin Dự Phòng</h3>
+            </div>
+        </div>
+
+        <section class="featured-products">
+            <h2>Sản Phẩm Nổi Bật</h2>
+            <div class="product-grid">
+                <!-- Sạc -->
+                <div class="product-card">
+                    <div class="product-badge">Hot</div>
+                    <img src="https://cdn.tgdd.vn/Products/Images/58/230315/adapter-sac-type-c-20w-cho-iphone-ipad-apple-mhje3-trang-thumb-600x600.jpeg" alt="Sạc nhanh Apple 20W">
+                    <h3>Sạc Nhanh Apple 20W</h3>
+                    <div class="product-specs">
+                        <p>Công suất: 20W</p>
+                        <p>Cổng sạc: Type-C</p>
+                        <p>Bảo hành: 12 tháng</p>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">490.000đ</span>
+                        <span class="original-price">590.000đ</span>
+                    </div>
+                    <button class="buy-btn">Mua Ngay</button>
+                </div>
+        
+                <!-- Tai nghe -->
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <img src="https://cdn.tgdd.vn/Products/Images/54/289781/tai-nghe-bluetooth-airpods-pro-2nd-gen-apple-thumb-600x600.jpeg" alt="AirPods Pro 2">
+                    <h3>Apple AirPods Pro 2</h3>
+                    <div class="product-specs">
+                        <p>Pin: 30 giờ</p>
+                        <p>Chống ồn: Có</p>
+                        <p>Chống nước: IPX4</p>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">5.990.000đ</span>
+                        <span class="original-price">6.990.000đ</span>
+                    </div>
+                    <button class="buy-btn">Mua Ngay</button>
+                </div>
+        
+                <!-- Ốp lưng -->
+                <div class="product-card">
+                    <img src="https://cdn.tgdd.vn/Products/Images/60/290326/op-lung-magsafe-iphone-14-pro-max-nhua-trong-apple-mpu73-thumb-600x600.jpeg" alt="Ốp lưng iPhone 14 Pro Max">
+                    <h3>Ốp lưng iPhone 14 Pro Max MagSafe</h3>
+                    <div class="product-specs">
+                        <p>Chất liệu: Nhựa trong</p>
+                        <p>Tương thích: MagSafe</p>
+                        <p>Bảo hành: 6 tháng</p>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">790.000đ</span>
+                        <span class="original-price">990.000đ</span>
+                    </div>
+                    <button class="buy-btn">Mua Ngay</button>
+                </div>
+        
+                <!-- Pin dự phòng -->
+                <div class="product-card">
+                    <img src="https://cdn.tgdd.vn/Products/Images/57/266084/pin-sac-du-phong-polymer-10000mah-type-c-pd-qc30-xmobile-thumb-600x600.jpeg" alt="Pin dự phòng">
+                    <h3>Pin Dự Phòng 10000mAh</h3>
+                    <div class="product-specs">
+                        <p>Dung lượng: 10000mAh</p>
+                        <p>Sạc nhanh: PD & QC 3.0</p>
+                        <p>Cổng: Type-C, USB-A</p>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">490.000đ</span>
+                        <span class="original-price">690.000đ</span>
+                    </div>
+                    <button class="buy-btn">Mua Ngay</button>
+                </div>
+        
+                <!-- Kính cường lực -->
+                <div class="product-card">
+                    <div class="product-badge">Bestseller</div>
+                    <img src="https://cdn.tgdd.vn/Products/Images/1363/301608/ep-kinh-iphone-14-pro-max-trong-suot-jcpal-thumb-600x600.jpeg" alt="Kính cường lực iPhone">
+                    <h3>Kính Cường Lực iPhone 14 Pro Max</h3>
+                    <div class="product-specs">
+                        <p>Độ cứng: 9H</p>
+                        <p>Chống vân tay: Có</p>
+                        <p>Độ trong: 99%</p>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">250.000đ</span>
+                        <span class="original-price">350.000đ</span>
+                    </div>
+                    <button class="buy-btn">Mua Ngay</button>
+                </div>
+        
+                <!-- Sạc không dây -->
+                <div class="product-card">
+                    <img src="https://cdn.tgdd.vn/Products/Images/9499/202328/sac-khong-day-qi-10w-mbp-x-wb-01-den-avatar-1-600x600.jpg" alt="Sạc không dây">
+                    <h3>Sạc Không Dây Qi 10W</h3>
+                    <div class="product-specs">
+                        <p>Công suất: 10W</p>
+                        <p>Chuẩn Qi: Có</p>
+                        <p>Tương thích: Đa thiết bị</p>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">450.000đ</span>
+                        <span class="original-price">550.000đ</span>
+                    </div>
+                    <button class="buy-btn">Mua Ngay</button>
+                </div>
+        
+                <!-- Tai nghe có dây -->
+                <div class="product-card">
+                    <img src="https://cdn.tgdd.vn/Products/Images/54/243055/tai-nghe-ep-lightning-apple-mmtn2-trang-thumb-600x600.jpeg" alt="Tai nghe có dây Apple">
+                    <h3>Tai Nghe EarPods Lightning</h3>
+                    <div class="product-specs">
+                        <p>Jack cắm: Lightning</p>
+                        <p>Tích hợp mic: Có</p>
+                        <p>Dây dài: 1.2m</p>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">590.000đ</span>
+                        <span class="original-price">790.000đ</span>
+                    </div>
+                    <button class="buy-btn">Mua Ngay</button>
+                </div>
+        
+                <!-- Giá đỡ điện thoại -->
+                <div class="product-card">
+                    <img src="https://cdn.tgdd.vn/Products/Images/1955/238008/gia-do-dien-thoai-xe-hoi-tu- cao-avantree-thumb-600x600.jpeg" alt="Giá đỡ điện thoại">
+                    <h3>Giá Đỡ Điện Thoại Xe Hơi Tu Cảo</h3>
+                    <div class="product-specs">
+                        <p>Chất liệu: Nhựa cao cấp</p>
+                        <p>Tương thích: Đa thiết bị</p>
+                        <p>Độ bền: Cao</p>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">350.000đ</span>
+                        <span class="original-price">450.000đ</span>
+                    </div>
+                    <button class="buy-btn">Mua Ngay</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="detailed-categories">
+            <div class="category-section">
+                <h2>Danh Mục Chi Tiết</h2>
+                <div class="subcategories">
+                    <div class="subcategory">
+                        <h4>Sạc & Cáp</h4>
+                        <ul>
+                            <li>Sạc nhanh iPhone</li>
+                            <li>Sạc không dây</li>
+                            <li>Cáp Lightning</li>
+                            <li>Cáp Type-C</li>
+                        </ul>
+                    </div>
+                    <div class="subcategory">
+                        <h4>Tai Nghe</h4>
+                        <ul>
+                            <li>Tai nghe không dây</li>
+                            <li>Tai nghe có dây</li>
+                            <li>Tai nghe gaming</li>
+                            <li>Tai nghe thể thao</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="special-offers">
+            <h2>Ưu Đãi Đặc Biệt</h2>
+            <div class="offer-grid">
+                <div class="offer-card">
+                    <h3>Giảm 20%</h3>
+                    <p>Cho tất cả phụ kiện Apple</p>
+                    <span class="offer-code">APPLE20</span>
+                </div>
+                <div class="offer-card">
+                    <h3>Mua 2 Tặng 1</h3>
+                    <p>Áp dụng cho ốp lưng</p>
+                    <span class="offer-code">BUY2GET1</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="warranty-info">
+            <h2>Thông Tin Bảo Hành</h2>
+            <div class="warranty-grid">
+                <div class="warranty-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Bảo Hành Chính Hãng</h3>
+                    <p>12 tháng cho sản phẩm chính hãng</p>
+                </div>
+                <div class="warranty-card">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3>Đổi Trả Miễn Phí</h3>
+                    <p>30 ngày đổi trả nếu lỗi nhà sản xuất</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Thêm hiệu ứng hover cho các nút
+        document.querySelectorAll('.buy-btn').forEach(button => {
+            button.addEventListener('mouseover', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            button.addEventListener('mouseout', function() {
+                this.style.transform = ' scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>'

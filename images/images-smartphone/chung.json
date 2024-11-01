@@ -1,0 +1,96 @@
+    {
+  "test1": {
+    "name": "ABC",
+    "price": {
+      "current": "40.490.000đ",
+      "original": "44.490.000đ",
+      "discount": "-9%"
+    },
+    "sold": 27,
+    "offers": [
+      {
+        "title": "ƯU ĐÃI",
+        "content": [
+          "Gói 30 ngày bao test",
+          "kính cường lực",
+          "Gói cài đặt phần mềm trọn đời"
+        ]
+      },
+      {
+        "title": "TRỢ GIÁ",
+        "content": [
+          "Khi mua phụ kiện",
+          "Khi lấy cũ đổi mới"
+        ]
+      }
+    ],
+    "images": [
+        "img/samsung_galaxy_s24_ultra_256gb_(1).png",
+        "img/samsung_galaxy_s24_ultra_256gb_(2).png",
+        "img/samsung_galaxy_s24_ultra_256gb_(3).png",
+        "img/samsung_galaxy_s24_ultra_256gb_(4).png",
+        "img/samsung_galaxy_s24_ultra_256gb_(5).png",
+        "img/samsung_galaxy_s24_ultra_256gb_(6).png",
+        "img/samsung_galaxy_s24_ultra_256gb_(7).png"
+    ],
+    "specifications": {
+      "screen": {
+        "size": "6.8 inches",
+        "technology": "Dynamic AMOLED 2X, Corning® Gorilla® Armor®, 16 triệu màu",
+        "resolution": "1440 x 3120 pixels",
+        "refresh_rate": "120Hz"
+      },
+      "camera": {
+        "front": "12MP, f2/2",
+        "rear": {
+          "main": "200MP, Laser AF, OIS, zoom quang học x5",
+          "telephoto": "10MP",
+          "wide": "12MP, 13mm, f/2.2, 120*"
+        },
+        "video": "8K@24/30fps, 4K@30/60/120fps, 1080p@30/60/240fps, 1080p@960fps",
+        "features": [
+          "Trợ lí Chỉnh ảnh",
+          "Chụp đêm Nightography",
+          "Super HDR",
+          "Chống rung quang học OIS& Chống rung kỹ thuật số AI VDIS Zoom kĩ thuật số 100x, Zoom quang học 3x & 10x"
+        ]
+      },
+      "processor": {
+        "chipset": "Snapdragon 8 Gen 3",
+        "cpu": "3.39GHz, 3.1GHz, 2.9GHz, 2.2GHz",
+        "gpu": "Adreno 750 (1 GHz)"
+      },
+      "sim": {
+        "type": "SIM 1 + SIM 2 / SIM 1 + eSIM / 2 eSIM",
+        "HDH": "Android 14, One UI 6.1",
+        "Bluetooth": "v5.3"
+
+
+      },
+      "battery": {
+        "capacity": "5000mAh",
+        "charging": "Sạc nhanh 45W, Sạc không dây",
+        "gate": "USB Type-C"
+      },
+      "ram": "12GB",
+      "storage": "1TB",
+      "witdh-height":"162.3 x 79.0 x 8.6mm" ,
+      "weight": "232g",
+      "made-from": "Khung: Titanium <br> Lưng: kính"
+    },
+    "video_review": {
+      "title": "Samsung Galaxy S24 Ultra 12GB 256GB Review",
+      "url": "https://www.youtube.com/embed/3hPoEmlBQdY?autoplay=1&mute=1"
+    },
+    "highlights": [
+      "Trải nghiệm đỉnh cao với hiệu năng mạnh mẽ từ vi xử lý tân tiến, kết hợp cùng RAM 12GB cho khả năng đa nhiệm mượt mà.",
+      "Lưu trữ thoải mái mọi ứng dụng, hình ảnh và video với bộ nhớ trong 256GB.",
+      "Nâng tầm nhiếp ảnh di động với hệ thống camera tiên tiến, cho ra đời những bức ảnh và video chất lượng chuyên nghiệp.",
+      "Thiết kế sang trọng, đẳng cấp, khẳng định phong cách thời thượng."
+    ],
+    "description": "Samsung S24 Ultra là siêu phẩm smartphone đỉnh cao mở đầu năm 2024 đến từ nhà Samsung với chip Snapdragon 8 Gen 3 For Galaxy mạnh mẽ, công nghệ tương lai Galaxy AI cùng khung viền Titan đẳng cấp hứa hẹn sẽ mang tới nhiều sự thay đổi lớn về mặt thiết kế và cấu hình. SS Galaxy S24 bản Ultra sở hữu màn hình 6.8 inch Dynamic AMOLED 2X tần số quét 120Hz. Máy cũng sở hữu camera chính 200MP, camera zoom quang học 50MP, camera tele 10MP và camera góc siêu rộng 12MP.",
+    "reasons_to_buy": "Đầu năm 2024, Samsung cho ra mắt Samsung S24 Ultra – Flagship dẫn đầu xu hướng với công nghệ AI tích hợp cùng nhiều tính năng và ưu điểm vượt trội khác. Có thể thấy, sở hữu sớm Samsung S24 Ultra đồng nghĩa với việc bạn là một trong những người đầu tiên khám phá, trải nghiệm công nghệ hoàn toàn mới được tích hợp ngay trên chiếc điện thoại thông minh. Ngoài thiết kế sang trọng, có nhiều điểm cải tiến mới, thì thiết bị này còn hỗ trợ nâng cao trải nghiệm trong giải trí, học tập, làm việc thông qua AI - tính năng mà trước nay có thể các sản phẩm khác chưa làm được."
+
+  }
+
+}

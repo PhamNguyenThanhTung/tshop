@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ưu Đãi Đặc Quyền - [Tên Cửa Hàng]</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Reset CSS */
+*/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    background-image: url('background.jpg'); /* Hình nền nhẹ */
+    background-size: cover;
+}
+
+header {
+    background: linear-gradient(rgb(40, 39, 39), gray);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #0073e6; /* Đường viền dưới cho header */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #005bb5;
+    border-radius: 5px;
+    transform: scale(1.05); /* Hiệu ứng phóng to khi hover */
+}
+
+.header-content {
+    margin-top: 20px;
+}
+
+.offer-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #0073e6; /* Đường viền cho offer-section */
+}
+
+.offer-section h2 {
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+.offer-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin: 15px 0;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Thêm hiệu ứng box-shadow */
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Tăng độ bóng khi hover */
+}
+
+.offer-card h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.offer-card ul {
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-top: 5px solid #0073e6; /* Đường viền trên cho footer */
+}
+
+.newsletter {
+    margin-bottom: 20px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Thêm hiệu ứng cho nút */
+}
+
+button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05); /* Hiệu ứng phóng to khi hover */
+}
+
+.offer-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+</style>
+<body>
+    <header>
+        <nav>
+            <a href="#home">Trang Chủ</a>
+            <a href="#loyalty">Khách Hàng Thân Thiết</a>
+            <a href="#specific-groups">Nhóm Khách Hàng Cụ Thể</a>
+            <a href="#time-based">Ưu Đãi Theo Thời Gian</a>
+            <a href="#other-offers">Ưu Đãi Khác</a>
+        </nav>
+        <div class="header-content">
+            <h1>Ưu Đãi Đặc Quyền từ INO_WARE !</ h1>
+            <p>Khám phá các ưu đãi đặc biệt dành cho khách hàng thân thiết của chúng tôi. Mua sắm ngay để nhận các quyền lợi độc quyền!</p>
+        </div>
+    </header>
+
+    <section id="home">
+        <h2>Chào mừng đến với trang Ưu Đãi Đặc Quyền</h2>
+        <p>Chúng tôi trân trọng từng khách hàng và cung cấp các chương trình ưu đãi hấp dẫn để mang lại những lợi ích đặc biệt cho bạn. Dưới đây là các ưu đãi mà chúng tôi cung cấp, mời bạn tham khảo!</p>
+    </section>
+
+    <section id="loyalty" class="offer-section">
+        <h2>1. Chương Trình Khách Hàng Thân Thiết</h2>
+        <div class="offer-card">
+            <img style="width: 40px; object-fit: cover; margin-left: 45% ;" src="img/money.gif" alt="Tích điểm đổi quà">
+            <h3>Tích điểm đổi quà</h3>
+            <p>Với mỗi giao dịch, bạn sẽ tích lũy điểm đ    ể đổi thành tiền mặt, quà tặng hoặc giảm giá cho các đơn hàng sau.</p>
+        </div>
+        <div class="offer-card">
+            <img style="width: 40px; object-fit: cover; margin-left: 45%  ;" src="img/money.gif" alt="Bậc thành viên">
+            <h3>Bậc thành viên</h3>
+            <p>Khách hàng thân thiết được chia thành các     cấp bậc như: Thành viên mới, Bạc, Vàng, và Kim Cương. Mỗi bậc sẽ được hưởng các quyền lợi đặc biệt:</p>
+            <ul>
+                <li>Thành viên mới: Nhận 5% giảm giá cho đơn hàng đầu tiên.</li>
+                <li>Thành viên Bạc: Giảm 10% cho mọi đơn hàng.</li>
+                <li>Thành viên Vàng: Ưu đãi sinh nhật và giảm 15% toàn bộ sản phẩm.</li>
+                <li>Thành viên Kim Cương: Ưu đãi sinh nhật, hỗ trợ riêng, giảm giá 20% và quà tặng đặc biệt.</li>
+            </ul>
+        </div>
+        <div class="offer-card">
+            <img style="width: 40px; object-fit: cover; margin-left: 45%  ;" src="img/money.gif" alt="Ưu đãi sinh nhật">
+            <h3>Ưu đãi sinh nhật</h3>
+            <p>Vào ngày sinh nhật, khách hàng nhận ngay     voucher giảm giá 500.000đ cùng quà tặng bất ngờ!</p>
+        </div>
+        <div class="offer-card">
+            <img style="width: 40px; object-fit: cover; margin-left: 45%  ;" src="img/money.gif" alt="Sự kiện dành riêng">
+            <h3>Sự kiện dành riêng</h3>
+            <p>Tham gia các buổi ra mắt sản phẩm mới, hộ    i thảo và mini-game chỉ dành cho khách hàng thân thiết.</p>
+        </div>
+    </section>
+
+    <!-- Add more sections here -->
+
+    <footer>
+        <div class="newsletter">
+            <h3>Đăng ký nhận ưu đãi</h3>
+            <p>Nhập email của bạn để nhận thông tin về các ưu đãi mới nhất!</p>
+            <input type="email" id="email" placeholder="Email của bạn">
+            <button onclick="subscribe()">Đăng Ký</button>
+        </div>
+        <p>© 2023 [Tên Cửa Hàng]. All Rights Reserved.</p>
+    </footer>
+
+<script>
+    function subscribe() {
+    const email = document.getElementById("email").value;
+    if (email) {
+        alert(`Đăng ký thành công! Chúng tôi sẽ gửi ưu đãi đến ${email}`);
+    } else {
+        alert("Vui lòng nhập email để nhận ưu đãi.");
+    }
+}
+</script>
+
+</body>
+</html>
